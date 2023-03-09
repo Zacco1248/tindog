@@ -1,0 +1,170 @@
+$background-color: #ff4c68;
+$color-secondary: #ef8172;
+$default-container-padding: 7% 15%;
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 900;
+}
+
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.big-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h3{
+    font-size: 1.3rem;
+    padding: 1% 0 0;
+}
+
+.title-container{
+    padding: 3% 15% 7%;
+}
+
+.container-fluid{
+    padding: $default-container-padding;
+}
+
+#title{
+    background-color: $background-color;
+    color: #fff;
+    text-align:left;
+  
+}
+
+/* Navbar bar */
+.navbar{
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+    a{
+        font-size: 1.4rem;
+        font-family: "Montserrat";
+        font-weight: 300;
+    }
+}
+
+//buttons 
+.download-btn{
+    margin: 5% 3% 5% 0
+}
+
+//title img
+.title_img{
+    width: 20%;
+    rotate: (25deg);
+    position: absolute;
+    right: 25%;
+}
+
+//features section
+
+#features{
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    i{
+        font-size: 4rem;
+        color: $color-secondary;
+        &:hover{
+            color: $background-color;
+        }
+    }
+
+    p{
+        color: #8f8f8f;
+    }
+    h3{
+        font-size: 1.3rem;
+        padding: 1% 0 0;
+    }
+}
+
+//testimonials
+
+#testimonials{
+    background-color: $color-secondary;
+    color: #fff;
+
+    img{
+        width: 10%;
+        border-radius: 100%;
+        margin: 20px;
+    }
+
+    h2{
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+}
+
+//press
+#press{
+    background-color: $color-secondary;
+    padding-bottom: 3%;
+    img{
+        width: 15%;
+        margin: 20px 20px 50px;
+    }
+}
+
+//pricing section
+
+#pricing{
+    padding: 100px;
+
+    .pricing-column {
+        padding: 3% 2%;
+
+        h2{
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+    }
+}
+
+#cta{
+    background-color: $background-color;
+    h3{
+        color: white;
+        font-size: 4rem;
+    }
+}
+
+footer{
+    i{
+        padding:0 10px;
+    }
+}
+
+@media (max-width: 1028px){
+
+    #title{
+        text-align: center;
+    }
+
+    .title_img{
+        position: static;
+        transform: rotate(0);
+        width: 60%;
+    }
+    
+}
